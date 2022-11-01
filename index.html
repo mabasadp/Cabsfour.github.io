@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Home | Cabsfour SSS</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- Fonts poppins style -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<!-- Bootstrapcdn font CSS-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- SWIPERJS CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+<!-- Box Icons CSS -->
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <!-- navbar row -->
+    <nav1 class="navbar-one flex">
+        <div class="left flex">
+            <div class="map">
+                <i class="fa fa-map-marker"></i>
+                <span>#067 Overland Subd Bagac, 2107 Bataan</span>   
+            </div>
+        </div>    
+
+        <div class="right flex">
+            <div >
+                <i class="fa fa-phone"></i>
+                <span >(+63) 975-491-8698 | (+63) 920-584-3000</span>
+            </div>
+            <div class="email">
+                <i class="fa fa-envelope-o"></i>
+                <span>Email: cabsfourss@gmail.com</span>
+                
+            </div>
+
+
+        </div>
+    </nav1>
+
+<!-- style of navbar row -->
+<style>
+
+    .nav1{
+        padding: 0 50px;
+        width: 100%;
+        
+    }
+    .flex{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+    }
+    .navbar-one{
+        background-color: #f44336;
+        color: white;
+        height: 40px;
+    
+    }
+    .left > div + div{
+        margin-left: 40px;
+    }
+    .right > div{
+        margin-left: 40px;
+    }
+
+    span{
+        margin-left: 10px; 
+        font-family: 'poppins', sans-serif ;
+    }
+</style>
+
+<section class="header">
+    
+    <nav>
+        <a href="index.html"><img src="images/cabsfour_logo.png" href="index.html"></a>
+             
+        <div class="nav-links" id="NavLinks">
+            
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Account.html">Account</a></li>   
+            </ul>
+        </div>
+        
+
+        <!-- Cart -->
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+            <!-- content -->
+            <div class="cart-content">
+
+                
+            </div>
+            <!-- total -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">₱0</div>
+            </div>
+            <!-- Buy Button -->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <!-- cart close-->
+            <i class='bx bx-x-circle' id="close-cart"></i>
+
+
+
+
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+ 
+        
+    </nav>
+
+
+    <div class="text-box">
+        <h1>Why We Choose Us?</h1>
+        <p>We ensure that we provide our clients the best security and protection that we can give.<br> Our workers are highly trained and our equipment are guaranteed top-notch. All of these<br> are maintained well to perform at their best. Because at Cabsfour Security Systems <br>Services, We care for your safety</p>
+        <a href="about.html" class="hero-btn3">Know More About Us</a>
+    </div>
+</section>
+
+<style>
+    .cart.active{
+        right: 0;
+    }
+    #close-cart{
+        position: absolute;
+        top: 1rem;
+        right: 0.8rem;
+        font-size: 2rem;
+        color: var(--text-color);
+        cursor: pointer;
+    }
+    .btn-buy{
+        display: flex;
+        margin: 1.5rem auto 0 auto;
+        padding: 12px 20px;
+        border: none;
+        background: var(--main-color);
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    .btn-buy:hover{
+        background: var(--text-color);
+    }
+    .total-price{
+        margin-left: 0.5rem;
+    }
+    .total-title{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .total{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1.5rem;
+        border-top: 1px solid var(--text-color);
+    }
+    .cart-remove{
+        font-size: 24px;
+        color: var(--main-color);
+        cursor: pointer;
+    }
+    .cart-quantity{
+        border: 1px solid var(--text-color);
+        outline-color: var(--main-color);
+        width: 2.4rem;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .cart-price{
+        font-weight: 500;
+    }
+    .detail-box{
+        display: grid;
+        row-gap: 0.5rem;
+    }
+    .cart-product-title{
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+    .cart-box{
+        display: grid;
+        grid-template-columns: 32% 50% 18%;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .cart-img{
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        padding: 10px;
+    }
+    .cart{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 360px;
+        min-height: 100vh;
+        padding: 20px;
+        background: white;
+        box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+        transition: 0.3s;
+    }
+    .cart-title{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 2rem;
+    }
+    .hero-btn3{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn3:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+.swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .main{
+        width: 100%;
+        min-height: 380px;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+      }
+      .service{
+        background: #fff;
+        padding: 30px;
+        border-radius: absolute;
+        bottom: 0;
+        z-index: 1;
+      }
+      .bodyy{
+        background: #f44336;
+      }
+      .service-logo{
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        margin: -90px auto 0;
+        background: #fff;
+        border: 18px solid #007bff;
+      }
+      .service-logo img{
+        width: 50px;
+        margin-top: 20px;
+      }
+      .service h4{
+        height: 35px;
+        width: 80%;
+        background: #fff;
+        margin: 50px auto;
+        position: relative;
+      }
+      .service h4::after{
+        content: '';
+        width: 40px;
+        height: 30px;
+        background: linear-gradient(to right, #fff, #007bff);
+        position: absolute;
+        right: -5px;
+        top: -5px;
+        z-index: -1;
+      }
+</style>
+
+<!-- Our Services - Services.html -->
+
+<h2 style="text-align: center; font-weight: 600; margin: 10px 0; font-weight: 2rem;"> Our Services & Products We Offer</h2>
+<p style="text-align: center; margin: 10px 0; font-weight: 250;">Providing you with the best security</p>
+<section class="box-area"> 
+
+    <div  class="single-box">
+        <div class="img-area"></div>
+        <div class="img-text">
+            <span class="header-text"><strong>CCTV</strong></span>
+            <p>With the increasing demand on CCTV surveillance system, Safetyzone offers wide range of surveillance cameras and recorders that will fit your security requirements and budget</p>
+        </div>
+    </div>
+
+    <div class="single-box2">
+        <div class="img-area2"></div>
+        <div class="img-text">
+            <span class="header-text"><strong>Fire Alarm System</strong></span>
+            <p>Fire alarm is designed to detect the unwanted presence of fire by monitoring environmental changes associated It can be automatically actuated, manually actuated or both automatic.</p>
+        </div>
+    </div>
+
+    <div class="single-box3">
+        <div class="img-area3"></div>
+        <div class="img-text">
+            <span class="header-text"><strong>Point of Sale  <br> System</strong></span>
+            <p>point-of-sale that uses biometric authentication based on physical characteristics to identify the user and authorize the deduction of funds from a bank account.</p>
+        </div>
+    </div>
+
+    <div class="single-box4">
+        <div class="img-area4"></div>
+        <div class="img-text">
+            <span class="header-text"><strong>Network Cabling</strong></span>
+            <p>Structured cabling is an infrastructure that’s made up of smaller, standardized elements. You can install structured cabling systems in a building or across a campus.</p>
+        </div>
+    </div>
+</section>
+
+<section class="box-area"> 
+
+    <div  class="single-box5">
+        <div class="img-area5"></div>
+        <div class="img-text">
+            <span class="header-text"><strong>Biometrics</strong></span>
+            <p>A measurable physical characteristic or personal behavioral trait used to recognize the identity, or verify the claimed identity, of an applicant.  Facial images, fingerprints, and iris scan.</p>
+        </div>
+    </div>
+
+    <div class="single-box6">
+        <div class="img-area6"></div>
+        <div class="img-text">
+            <span class="header-text"><strong>Computer Repair</strong></span>
+            <p>Computer repair is a broad field encompassing many tools, techniques and procedures used to repair computer hardware, software or network/Internet problems.</p>
+        </div>
+    </div>
+
+    <div class="single-box7">
+        <div class="img-area7"></div>
+        <div class="img-text">
+            <span class="header-text"><strong>Access Control</strong></span>
+            <p>Its purpose is to limit access to people who are authorized to enter an organization. It uses door readers that detect the unique identification numbers provided by credentials.</p>
+        </div>
+    </div>
+
+    <div class="single-box8">
+        <div class="img-area8"></div>
+        <div class="img-text">
+            <span class="header-text"><strong>Public Address System</strong></span>
+            <p>made up of an input source like a microphone, amplifiers, speakers and a controller.It allows to communicate from central panel to multiple or single areas</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Our Projects - Projects.html -->
+
+<h2 style="text-align: center; font-weight: 600; margin: 10px 0; font-weight: 2rem;"> Our Projects</h2>
+<p style="text-align: center; margin: 10px 0; font-weight: 250;">Smarter Security, Professionally Installed</p>
+
+
+<section id="gallery">
+
+    <div class="container gallery_container swiper mySwiper">
+        
+        <div class="gallery_head">
+            <div class="empty gallery_empty"></div>
+        </div>
+
+        <!-- SWIPER -->
+        <div class="swiper-wrapper">
+            <article class="swiper-slide">
+                <img src="images/Projects/projects_row1.jpg">
+            </article>
+            <article class="swiper-slide">
+                <img src="images/Projects/projects_row2.jpg">
+            </article>
+            <article class="swiper-slide">
+                <img src="images/Projects/projects_row3.jpg">
+            </article>
+            <article class="swiper-slide">
+                <img src="images/Projects/projects_row4.jpg">
+            </article>
+            <article class="swiper-slide">
+                <img src="images/Projects/projects_row5.jpg">
+            </article>
+            <article class="swiper-slide">
+                <img src="images/Projects/projects_row6.jpg">
+            </article>
+            <article class="swiper-slide">
+                <img src="images/Projects/projects_row7.jpg">
+            </article>
+            <article class="swiper-slide">
+                <img src="images/Projects/projects_row8.jpg">
+            </article>
+            <article class="swiper-slide">
+                <img src="images/Projects/projects_row9.jpg">
+            </article>
+            <article class="swiper-slide">
+                <img src="images/Projects/projects_row10.jpg">
+            </article>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+</section>
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+            599: {
+                slidesPerView: 4,
+                spaceBetween: 40
+            },
+            1023: {
+                slidesPerView: 4,
+                spaceBetween: 60
+            }
+        }
+      });
+</script>
+
+
+<!-- Inspiring Technology - Aboutus.html -->
+
+<section class="sub-container">
+
+    <h1>Inspiring Technology</h1>
+    <p>We are a hands-on company that provides solutions for our clients’<br> problems and anticipates future problems before they arise.</p>
+    <a href="about.html" class="hero-btn5">Learn More</a>
+</section>
+
+<style>
+        .hero-btn5{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    left: 46.5%;
+    top: 30%;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn5:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+ 
+</style>
+
+
+<!-- Contact Us - Contact Us.html -->
+
+<section class="gaq">
+    <h1>Call or Email Now to Get a Free Quote</h1>
+    <a href="Contact.html"class="hero-btn3">Contact Us</a>
+</section>
+
+<!-- brands -->
+<h2 style="text-align: center; font-weight: 600; margin: 10px 0; font-weight: 2rem; font-style: italic; color: #f44336;"> Our Major Clients</h2>
+
+
+<section class="brands">
+    <div class="small-container">
+        <div class="row1">
+            <div class="col-4">
+                <img src="images/logo/Bakeshop & Goodies-logo.png">
+            </div>
+            <div class="col-4">
+                <img src="images/logo/Circle_Plus_Pharmacy-logo.png.png">
+            </div>
+            <div class="col-4">
+                <img src="images/logo/lto-logo.png">
+            </div>
+            <div class="col-4">
+                <img src="images/logo/triwavecorp-logo.png.png">
+            </div>
+            <div class="col-4">
+                <img src="images/logo/kimchi_minimart-logo.png">
+            </div>
+            <div class="col-4">
+                <img src="images/logo/Peaksun Trucking-logo.png">
+            </div>
+            <div class="col-4">
+                <img src="images/logo/Ecosystem Technologies International Warehouse-logo.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Footer -->
+<section1>
+    <footer>
+        <div class="container">
+            <div class="sec aboutus">
+                <h2>About Us</h2>
+                <p>Cabsfour Security Systems Services is a Filipino owned company formed by dedicated entrepreneurs more than two Decades work experience in electronic security system integration. We are engaged in integrating various Electronic Security products such as Business Security System, Biometrics Access Controls, FDAS, IPBX, Electric Fence, Structured Cabling, Solar System Public Address System, Electrical, Alarm and CCTV.</p>
+ 
+                <ul class="sci">
+                    <li><a href="https://www.facebook.com/cabsfour/"><i class="fa fa-facebook-official"></i></a></li>
+                    <li><a href="https://vymaps.com/PH/Cabsfour-Security-System-Services-1213493655491211/"><i class="fa fa-map-o"></i></a></li>
+                    <li><a href="https://ph-check.com/item/cabsfour-security-systems-services/519037.html"><i class="fa fa-check-square"></i></a></li>
+                </ul>           
+            </div>
+            <div class="sec quicklinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker"></i></span>
+                        <span>#067 Overland Subd<br>Bagac, 2107 Bataan,<br>Philippines</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone"></i></span>
+                        <p><a href="+63 9754918698">+63 9754918698</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope-o"></i></span>
+                        <p><a href="mailto:cabantacet@gmail.com">cabantacet@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrighttext">
+        <p>Copyright 2022. CSSS Cabsfour Security Systems Services. All Rights Reserved</p>
+    </div>
+
+
+</section1>
+<!-- link to JS - Add to cart w/ Products.html -->
+
+<script src="js/main.js"></script>
+
+
+<!-- JavaScript for Toggle Menu -->
+
+<script>
+    var navLinks = document.getElementById("NavLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+
+</script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Cart - Cabsfour Security System Services - Website Design</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <!-- box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!--link to css-->
+    <link rel="stylesheet" href="css/style2.css">
+        <!-- SWIPERJS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+
+<body>
+    <style>
+        /* nav-links*/
+
+        .sub-header{
+        height: 50vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/aboutus.jpg);
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        color: #fff;
+        }
+        nav img{
+        width: 150px;
+        }
+        .nav-links{
+        flex: 1;
+        text-align: right;
+        }
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+        
+</style>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/cabsfour_logo.png" href="index.html"></a>
+        
+        <div class="nav-links" id="navLinks">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Account.html">Account</a></li>   
+            </ul>
+        </div>
+
+        <!--cart icon-->
+        <i class="bx bx-shopping-bag" id="cart-icon"></i>
+        <!-- cart -->
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+            <!-- content -->
+            <div class="cart-content"></div>
+            <!-- total -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">₱0</div>
+            </div>
+            <!-- buy button -->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <!-- cart close-->
+            <i class="bx bx-x" id="cart-close"></i>
+        </div>
+    </nav>
+    <h1>Products</h1>
+</section>
+
+
+<p style="text-align: center; margin: 10px 0; font-weight: 300; color: #f44336;">Home &#8594; Products &#8594; Page 4 of 6</p>
+<h2 style="text-align: center; font-weight: 600; margin: 10px 0; font-weight: 2rem;">Our Products</h2>
+    <!-- shop section-->
+    <section class="shop container">
+        <select>
+            <option>Default Shorting</option>
+            <option>Short Price</option>
+            <option>Short Popularity</option>
+            <option>Short Rating</option>
+            <option>Short Sale</option>
+        </select>
+        <!-- style selection items - <option> -->
+        <style>
+            .row-2{
+                justify-content: space-between;
+                margin: 100px auto 50px;
+            }
+            select{
+                border: 1px solid #ff523b;
+                padding: 5px;
+            }
+            select:focus{
+                outline: none;
+            }
+            .btn {
+            text-align: center;
+            vertical-align: middle;
+            padding: .67em .67em;
+            cursor: pointer;
+            }
+            .btn-primary {
+            color: white;
+            background-color: #ff523b;
+            border: none;
+            border-radius: .3em;
+            font-weight: bold;
+            }
+        
+        </style>
+
+        <!-- CONTENT -->
+        <div class="shop-content">
+            <!-- box 1 -->
+            <div class="product-box">
+                <img src="images/products/product25.png" alt="" class="product-img">
+                <h2 class="product-title">HIKVISION 21.5′ LED MONITOR (DS-D5022QE-B)</h2>
+                <span class="product-price">₱7900</span>
+                <p style="text-align: left; margin: 10px 0; font-weight: 250; font-size: small; color: #474545;">Make: Hikvision
+                    Model code: DS-D5022QE-B
+                    Monitor Type: LED
+                    Effective Screen Size Inches: 21.5 inch
+                    Colour Type: Colour</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+                        <!-- box 2 -->
+            <div class="product-box">
+                <img src="images/products/product26.png" alt="" class="product-img">
+                <h2 class="product-title">A4Tech OP-7204 USBA4tech KRS-85 Mouse Black</h2>
+                <span class="product-price">₱129</span>
+                <p style="text-align: left; margin: 10px 0; font-weight: 250; font-size: small; color: #474545;">4-Way Scrolling,
+                    Adjustable DPI,
+                    adjustable Weight,
+                    Ergonomic,
+                    Grip,
+                    Programmable Buttons,
+                    Side to Side Scrolling, Silent Brand</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+                        <!-- box 3 -->
+            <div class="product-box">
+                <img src="images/products/product27.png" alt="" class="product-img">
+                <h2 class="product-title">A4tech KRS-85 USB Keyboard Black</h2>
+                <span class="product-price">₱344</span>
+                <p style="text-align: left; margin: 10px 0; font-weight: 250; font-size: small; color: #474545;">Interface SATA 6 Gb/s Rotational Speed 7,200 RPM (nominal) Buffer Size 16 MB Transfer Rate (Buffer To Disk) 126 MB/s (Max) Formatted Capacity 500,107 MB</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+                        <!-- box 4 -->
+            <div class="product-box">
+                <img src="images/products/product28.png" alt="" class="product-img">
+                <h2 class="product-title">AX1500 Wi-Fi 6 Router</h2>
+                <span class="product-price">₱3895</span>
+                <p style="text-align: left; margin: 10px 0; font-weight: 250; font-size: small; color: #474545;">Product Specifications
+                    Brand: TP-Link
+                    Item model number: Archer AX10
+                    Operating System: Linux
+                    Connectivity Technology: Wi-Fi
+                    Wireless Type: 802.11n, 802.11ax, 802.11b, 802.11ac, 802.11g
+                    Data Transfer Rate: 1500 Mb per second
+                    Frequency Bands Supported: 5 GHz
+                    Total Ethernet Ports: 5
+                    LAN Port Bandwidth: Gigabit
+                    Data Transfer Rate: 1500 Megabits Per Second
+                    Control Method: Voice
+                    Security Protocol: WPS2, WPA-PSK, WPA2-PSK</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+                                 <!-- box 5 -->
+            <div class="product-box">
+                <img src="images/products/product29.png" alt="" class="product-img">
+                <h2 class="product-title"> Video Power Siamese Cable Security Camera Wire Cord Surveillance CCTV Camera System For 720p DVR Camera</h2>
+                <span class="product-price">₱250</span>
+                <p style="text-align: left; margin: 10px 0; font-weight: 250; font-size: small; color: #474545;">Compatible To Max Resolution of 720p DVR and Camera
+                    Black colored cable for easy blend.
+                    This cable is ideal for camera use, combined with video and power wire and include BNC connector and power Jack.
+                    Premade cable with connectors.
+                    Simple and easy Plug and Play installation
+                    BNC connectors for video and 2.1 mm plugs for power.
+                    Low-cost, durable and high performance
+                    Highly conductive video signal.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+                                 <!-- box 6 -->
+            <div class="product-box">
+                <img src="images/products/product30.png" alt="" class="product-img">
+                <h2 class="product-title">4 Pairs CCTV Coax BNC Video Power Balun Transceiver to CAT5e 6 RJ45 Connector</h2>
+                <span class="product-price">₱638.54</span>
+                <p style="text-align: left; margin: 10px 0; font-weight: 250; font-size: small; color: #474545;"><p style="text-align: left; margin: 10px 0; font-weight: 250; font-size: small; color: #474545;">CCTV Camera Coaxial BNC Video Power Transceiver to CAT5e 6 RJ45 Connector
+                    Specifications:
+                    Connectors: Male BNC and RJ45 Female Ports
+                    Frequency Response: DC to 8MHz
+                    Attenuation: 0.5dB
+                    CMRR (Common Mode Rejection Ratio): 60dB
+                    Impedance for BNC: 75Ω
+                    Impedance for RJ45: 100Ω
+                    Working temperature: -10°C to 70°C
+                    Storage temperature: -30°C to 70°C
+                    Humidity: 0 to 95%</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+                                 <!-- box 7 -->
+            <div class="product-box">
+                <img src="images/products/product31.png" alt="" class="product-img">
+                <h2 class="product-title">Adlink CAT6E Patch Cable 5m</h2>
+                <span class="product-price">₱150</span>
+                <p style="text-align: left; margin: 10px 0; font-weight: 250; font-size: small; color: #474545;"><p style="text-align: left; margin: 10px 0; font-weight: 250; font-size: small; color: #474545;">Brand: Authentic Ad-link
+                    Stranded Wire
+                    Cable Length: 5Meters
+                    Pure Copper Cat6e
+                    Gigabit Speed
+                    Cable Jacket Type: PVC - Polyvinyl Chloride
+                    Cable Type: Snag-less
+                    Cable Rating: CAT6E - 350 MHz
+                    Connector(s): 2 x RJ-45 Male
+                    Color: Blue
+                    Durable and Easy to Use
+                    Machine Crimped
+                    100% Brand New and High Quality</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+                                 <!-- box 8 -->
+            <div class="product-box">
+                <img src="images/products/product32.png" alt="" class="product-img">
+                <h2 class="product-title">A4tech KRS 8372 Ps2 Keyboard and Mouse</h2>
+                <span class="product-price">₱419</span>
+                <p style="text-align: left; margin: 10px 0; font-weight: 250; font-size: small; color: #474545;"><p style="text-align: left; margin: 10px 0; font-weight: 250; font-size: small; color: #474545;">Product Specifications
+                    Type: Keyboard and Mouse
+                    Category: A-Shape Keyboard
+                    Ports: ps2 Ports
+                    Compatible with desktop</p>
+                <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                </div>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+        </div>
+
+             <!-- Pagination -->
+    
+        <div class = "demo">
+            <a href = "Products.html">1</a>
+            <a href = "Products2.html">2</a>
+            <a href = "Products3.html">3</a>
+            <a href = "#" class="active">4</a>
+            <a href = "Products5.html">5</a>
+            <a href = "Products6.html">6</a>
+            <a href="Products5.html">Next Page &#8594;</a>
+        </div>
+    </section>
+
+<!-- Pagination style -->
+<style>
+    .demo {
+    display: inline-block;
+    line-height: 150px;
+    }
+    .demo a {
+    color: #ff523b;
+    padding: 5px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 2s;
+    border-color: #ff523b;
+    }
+    .demo a.active {
+    background-color: #ff523b;
+    color: white;
+    border-radius: 5px;
+    }
+    .demo a:hover:not(.active) {
+    background-color: #ffaea3;
+    }
+</style>
+        
+ 
+<!-- Footer -->
+<section1>
+    <footer>
+        <div class="container">
+            <div class="sec aboutus">
+                <h2>About Us</h2>
+                <p>Cabsfour Security Systems Services is a Filipino owned company formed by dedicated entrepreneurs more than two Decades work experience in electronic security system integration. We are engaged in integrating various Electronic Security products such as Business Security System, Biometrics Access Controls, FDAS, IPBX, Electric Fence, Structured Cabling, Solar System Public Address System, Electrical, Alarm and CCTV.</p>
+ 
+                <ul class="sci">
+                    <li><a href="https://www.facebook.com/cabsfour/"><i class="fa fa-facebook-official"></i></a></li>
+                </ul>           
+            </div>
+            <div class="sec quicklinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                    <li><a href="#">Shops</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker"></i></span>
+                        <span>#067 Overland Subd<br>Bagac, 2107 Bataan,<br>Philippines</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone"></i></span>
+                        <p><a href="+63 9754918698">+63 9754918698</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope-o"></i></span>
+                        <p><a href="mailto:cabantacet@gmail.com">cabantacet@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrighttext">
+        <p>Copyright 2022. All Rights Reserved</p>
+    </div>
+
+
+</section1>
+
+
+
+
+<!-- link js -->
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+<style>
+    /*------------FOOTER-----------*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+footer .container .sec{
+    margin-right: 30px;
+}
+footer .container .sec.aboutus{
+    width: 40%;
+}
+footer .container h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .container h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+footer p{
+    color: #999;
+}
+
+.sci{
+    margin-top: 20px;
+    display: flex;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.sci li a:hover{
+    background: #f44336;
+}
+.sci li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+.quicklinks{
+    position: relative;
+    width: 25%;
+}
+.quicklinks ul li{
+    list-style: none;
+}
+.quicklinks ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.quicklinks ul li a:hover{
+    color: #fff;
+}
+
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info{
+    position: relative;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span{
+    color: #999;
+}
+.contact .info li span a{
+    color: #999;
+}
+.contact .info li a{
+    color: #999;
+    text-decoration: none;
+
+}
+.contact .info li a:hover{
+    color: #fff;
+}
+.copyrighttext{
+    width: 100%;
+    background: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999;
+
+}
+@media (max-width: 991px){
+    footer{
+        padding: 40px;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container .sec{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .container .sec.aboutus,.quicklinks,.contact{
+        width: 100%;
+    }
+    .copyrighttext{
+        padding: 8px 40px;
+    }
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+ 

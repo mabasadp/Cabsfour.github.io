@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Cart - Cabsfour Security System Services - Website Design</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <!-- box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!--link to css-->
+    <link rel="stylesheet" href="css/style2.css">
+        <!-- SWIPERJS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+
+<body>
+    <style>
+        /* nav-links*/
+
+        .sub-header{
+        height: 50vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/aboutus.jpg);
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        color: #fff;
+        }
+        nav img{
+        width: 150px;
+        }
+        .nav-links{
+        flex: 1;
+        text-align: right;
+        }
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+        
+</style>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/cabsfour_logo.png" href="index.html"></a>
+        
+        <div class="nav-links" id="navLinks">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Account.html">Account</a></li>   
+            </ul>
+        </div>
+
+        <!--cart icon-->
+        <i class="bx bx-shopping-bag" id="cart-icon"></i>
+        <!-- cart -->
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+            <!-- content -->
+            <div class="cart-content"></div>
+            <!-- total -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">₱0</div>
+            </div>
+            <!-- buy button -->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <!-- cart close-->
+            <i class="bx bx-x" id="cart-close"></i>
+        </div>
+    </nav>
+    <h1>Products</h1>
+</section>
+
+
+<p style="text-align: center; margin: 10px 0; font-weight: 300; color: #f44336;">Home &#8594; Products &#8594; Page 2 of 6</p>
+<h2 style="text-align: center; font-weight: 600; margin: 10px 0; font-weight: 2rem;">Our Products</h2>
+
+    <!-- shop section-->
+    <section class="shop container">
+        <select>
+            <option>Default Shorting</option>
+            <option>Short Price</option>
+            <option>Short Popularity</option>
+            <option>Short Rating</option>
+            <option>Short Sale</option>
+        </select>
+        <!-- style selection items - <option> -->
+        <style>
+            .row-2{
+                justify-content: space-between;
+                margin: 100px auto 50px;
+            }
+            select{
+                border: 1px solid #ff523b;
+                padding: 5px;
+            }
+            select:focus{
+                outline: none;
+            }
+            .btn {
+            text-align: center;
+            vertical-align: middle;
+            padding: .67em .67em;
+            cursor: pointer;
+            }
+            .btn-primary {
+            color: white;
+            background-color: #ff523b;
+            border: none;
+            border-radius: .3em;
+            font-weight: bold;
+            }
+        
+        </style>
+
+        <!-- CONTENT -->
+        <div class="shop-content">
+            <!-- box 1 -->
+            <div class="product-box">
+                <img src="images/products/product9.png" alt="" class="product-img">
+                <h2 class="product-title">HIKVISION (NVR) DS-7616NI-Q2 16-CHANNEL 1U 4K NVR</h2>
+                <span class="product-price">₱4950</span>
+                <p style="text-align: left; margin: 10px 0; font-weight: 250; font-size: small; color: #474545;">Up to 16 channel IP cameras can be connected Supports decoding H.265+/H.265/H.264+/H.264 video formats Up to 4K high-definition live view, storage and playback Up to 4-ch @ 1080p decoding capacity</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+                        <!-- box 2 -->
+            <div class="product-box">
+                <img src="images/products/product10.png" alt="" class="product-img">
+                <h2 class="product-title">HIKVISION (NVR) DS-7608NI-Q2/8P 8-CHANNEL POE NVR</h2>
+                <span class="product-price">₱7900</span>
+                <p style="text-align: left; margin: 10px 0; font-weight: 250; font-size: small; color: #474545;">Video/Audio InputTwo-way audio input: 1-ch, RCA (2.0 Vp-p, 1kΩ)IP video input: 8-chNetworkIncoming bandwidth: 80MbpsOutgoing bandwidth: 80MbpsVideo/Audio OutputHDMI Output: 1-ch, resolution:4K (3840 × 2160)/30Hz,1920 × 1080/60Hz, 1600 × 1200/60Hz, 1280 ×1024/60Hz</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+                        <!-- box 3 -->
+            <div class="product-box">
+                <img src="images/products/product11.png" alt="" class="product-img">
+                <h2 class="product-title">HIKVISION (DVR) DS-7216HUHI-K2/S 16-CHANNEL 1U 16 POE 4K NVR</h2>
+                <span class="product-price">₱17149</span>
+                <p style="text-align: left; margin: 10px 0; font-weight: 250; font-size: small; color: #474545;">Up to 16 channel IP cameras can be connected Supports decoding H.265+/H.265/H.264+/H.264 video formats Up to 4K high-definition live view, storage and playback Up to 8-ch @ 1080p decoding capacity</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+                        <!-- box 4 -->
+            <div class="product-box">
+                <img src="images/products/product12.png" alt="" class="product-img">
+                <h2 class="product-title">HIKVISION (DVR) DS-7232HQHI-K2 32-CH 1080P 1U H.265 DVR</h2>
+                <span class="product-price">₱14900</span>
+                <p style="text-align: left; margin: 10px 0; font-weight: 250; font-size: small; color: #474545;">32 channels and 2 HDDs 1U DVR Efficient H.265 pro+ compression technology Encoding ability up to 1080p @ 15 fps 5 signals input adaptively (HDTVI/AHD/CVI/CVBS/IP) Up to 40 network cameras</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+                                 <!-- box 5 -->
+            <div class="product-box">
+                <img src="images/products/product13.png" alt="" class="product-img">
+                <h2 class="product-title">HIKVISION IP CAMERA DS-2CE72DFT-PIRX OF28 2MP 1080P DOME</h2>
+                <span class="product-price">₱2400</span>
+                <p style="text-align: left; margin: 10px 0; font-weight: 250; font-size: small; color: #474545;">2 MP ColorVu PIR Siren Fixed Turret Camera 2 MP PIR siren full-time color turret camera PIR detection, red and blue flashlight alarm, audio alarm and alarm out to warn</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+                                 <!-- box 6 -->
+            <div class="product-box">
+                <img src="images/products/product14.png" alt="" class="product-img">
+                <h2 class="product-title">HIKVISION (CAMERA) 1MP DS-2CD1101-I DOME</h2>
+                <span class="product-price">₱2400</span>
+                <p style="text-align: left; margin: 10px 0; font-weight: 250; font-size: small; color: #474545;"><p style="text-align: left; margin: 10px 0; font-weight: 250; font-size: small; color: #474545;">1/4" progressive scan CMOS Up to 1.0 megapixel Up to 30 m IR range IP67, IK10 Mobile monitoring via Hik-Connect or iVMS-4500</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+                                 <!-- box 7 -->
+            <div class="product-box">
+                <img src="images/products/product15.png" alt="" class="product-img">
+                <h2 class="product-title">HIKVISION (CAMERA) 1MP DS-2CD1001-I MINI IR BULLET</h2>
+                <span class="product-price">₱2400</span>
+                <p style="text-align: left; margin: 10px 0; font-weight: 250; font-size: small; color: #474545;"><p style="text-align: left; margin: 10px 0; font-weight: 250; font-size: small; color: #474545;">1/4 progressive scan CMOS Up to 1.0 megapixel 2.8mm/4mm/6mm fixed focal lens Up to 30 m IR range Dual stream Digital WDR (Wide Dynamic Range) 3D DNR (Digital Noise Reduction)</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+                                 <!-- box 8 -->
+            <div class="product-box">
+                <img src="images/products/product16.png" alt="" class="product-img">
+                <h2 class="product-title">HIKVISION NETWORK CAMERA DS-2CD2T43GO-I5 EXIR 4MP BULLET</h2>
+                <span class="product-price">₱3835</span>
+                <p style="text-align: left; margin: 10px 0; font-weight: 250; font-size: small; color: #474545;"><p style="text-align: left; margin: 10px 0; font-weight: 250; font-size: small; color: #474545;">4 MP Outdoor WDR Fixed Bullet Network Camera High-quality imaging with 4 MP resolution Efficient H.265+ compression technology Clear imaging against strong backlight due to 120 dB true WDR technology</p>
+                <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                </div>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+        </div>
+
+             <!-- Pagination -->
+    
+        <div class = "demo">
+            <a href = "Products.html">1</a>
+            <a href = "#" class="active">2</a>
+            <a href = "Products3.html">3</a>
+            <a href = "Products4.html">4</a>
+            <a href = "Products5.html">5</a>
+            <a href = "Products6.html">6</a>
+            <a href="Products3.html">Next Page &#8594;</a>
+        </div>
+    </section>
+
+<!-- Pagination style -->
+<style>
+    .demo {
+    display: inline-block;
+    line-height: 150px;
+    }
+    .demo a {
+    color: #ff523b;
+    padding: 5px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 2s;
+    border-color: #ff523b;
+    }
+    .demo a.active {
+    background-color: #ff523b;
+    color: white;
+    border-radius: 5px;
+    }
+    .demo a:hover:not(.active) {
+    background-color: #ffaea3;
+    }
+</style>
+        
+ 
+<!-- Footer -->
+<section1>
+    <footer>
+        <div class="container">
+            <div class="sec aboutus">
+                <h2>About Us</h2>
+                <p>Cabsfour Security Systems Services is a Filipino owned company formed by dedicated entrepreneurs more than two Decades work experience in electronic security system integration. We are engaged in integrating various Electronic Security products such as Business Security System, Biometrics Access Controls, FDAS, IPBX, Electric Fence, Structured Cabling, Solar System Public Address System, Electrical, Alarm and CCTV.</p>
+ 
+                <ul class="sci">
+                    <li><a href="https://www.facebook.com/cabsfour/"><i class="fa fa-facebook-official"></i></a></li>
+                </ul>           
+            </div>
+            <div class="sec quicklinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                    <li><a href="#">Shops</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker"></i></span>
+                        <span>#067 Overland Subd<br>Bagac, 2107 Bataan,<br>Philippines</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone"></i></span>
+                        <p><a href="+63 9754918698">+63 9754918698</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope-o"></i></span>
+                        <p><a href="mailto:cabantacet@gmail.com">cabantacet@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrighttext">
+        <p>Copyright 2022. All Rights Reserved</p>
+    </div>
+
+
+</section1>
+
+
+
+
+<!-- link js -->
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+<style>
+    /*------------FOOTER-----------*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+footer .container .sec{
+    margin-right: 30px;
+}
+footer .container .sec.aboutus{
+    width: 40%;
+}
+footer .container h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .container h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+footer p{
+    color: #999;
+}
+}
+.sci{
+    margin-top: 20px;
+    display: flex;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.sci li a:hover{
+    background: #f44336;
+}
+.sci li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+.quicklinks{
+    position: relative;
+    width: 25%;
+}
+.quicklinks ul li{
+    list-style: none;
+}
+.quicklinks ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.quicklinks ul li a:hover{
+    color: #fff;
+}
+
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info{
+    position: relative;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span{
+    color: #999;
+}
+.contact .info li span a{
+    color: #999;
+}
+.contact .info li a{
+    color: #999;
+    text-decoration: none;
+
+}
+.contact .info li a:hover{
+    color: #fff;
+}
+.copyrighttext{
+    width: 100%;
+    background: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999;
+
+}
+@media (max-width: 991px){
+    footer{
+        padding: 40px;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container .sec{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .container .sec.aboutus,.quicklinks,.contact{
+        width: 100%;
+    }
+    .copyrighttext{
+        padding: 8px 40px;
+    }
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
